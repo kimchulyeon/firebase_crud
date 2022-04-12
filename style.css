@@ -21,6 +21,7 @@ body {
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  padding-bottom: 2rem;
 }
 
 header {
@@ -31,4 +32,117 @@ header {
 header h3 {
   color: #fff;
   margin-left: 1.5rem;
+}
+
+/* TABLE */
+
+.table-wrapper {
+  text-align: center;
+}
+
+.table-users {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+.table-users th,
+.table-users td {
+  /* background-color: rebeccapurple; */
+  text-align: left;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.table-users th {
+  background-color: #fafafa;
+  padding-top: 1rem auto;
+}
+
+.btn {
+  background-color: transparent;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+.btn-edit {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-delete {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-add {
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+}
+
+/* MODAL */
+
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.434);
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  width: 25rem;
+  margin: 5rem auto;
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+}
+.modal-header {
+  margin-bottom: 1rem;
+  background-color: #f8fafb;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.modal-body {
+  padding: 2rem;
+}
+.modal-body input {
+  width: 100%;
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  text-indent: 0.9rem;
+  outline: none;
+}
+.btn-modal {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  width: 9rem;
 }
