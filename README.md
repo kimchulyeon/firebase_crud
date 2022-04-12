@@ -11,3 +11,5 @@
 - input태그 placeholder 텍스트 띄우기 : text-indent
 
 ## JS
+
+- modal창 e.target if문
